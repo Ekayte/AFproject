@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Afproject</title>
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
+    
+     <!-- scrollmagic -->
+
+     <script type="text/javascript" src="../scrollmagic2/assets/js/lib/jquery.min.js"></script>
+     <script type="text/javascript" src="../scrollmagic2/assets/js/lib/highlight.pack.js"></script>
+     <script type="text/javascript" src="../scrollmagic2/assets/js/lib/modernizr.custom.min.js"></script>
+     <script type="text/javascript" src="../scrollmagic2/assets/js/examples.js"></script>
+     
+     <script type="text/javascript" src="../scrollmagic2/assets/js/lib/gsap3/gsap.min.js"></script>
+     <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/ScrollMagic.js"></script>
+     <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+     <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+</head>
+<body>
+
+  <div class="h-auto bg-no-repeat bg-cover bg-top" style="background-image: url(../image/image_font_index.jpg);">
+ 
+  
+<!-- navbar -->
+        
+        <div class="flex ">
+            <div class="flex-none w-40 h-16">
+              <!-- This item will not grow -->
+            </div>
+
+            <nav class="flex-grow  mt-6 rounded-2xl  relative flex items-center justify-between px-2 py-3 mb-3 shadow-lg bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 ">
+              <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="index.html" class="flex items-center">
+                    
+                    <span class="uppercase self-center text-xl font-semibold whitespace-nowrap dark:text-white">Afproject</span>
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                  <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-blue-400" aria-current="page">Projets</a>
+                    </li>
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent dark:border-gray-700">Inscription</a>
+                    </li>
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent dark:border-gray-700">Connection</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+            <div class="flex-none w-40 h-16">
+              <!-- This item will not grow -->
+            </div>
+          </div>
+
+<!-- Titre -->
+
+      <div class="grid grid-cols-10 gap-2 police">
+        <div class="col-start-2 col-span-8 text-6xl pt-16 "> Projets d'électroniques, objets connectés </div>
+        <div class="col-start-2 col-span-8 text-6xl"> et informatiques</div>
+        <div class="col-start-2 col-span-8 text-3xl pt-16"> Présentation de différent conception de projet électronique</div>
+        <div class="col-start-2 col-span-8 text-3xl pb-56"> et informatiques</div>
+     
+      </div>
+       
+  </div>
+
+<!-- Entête de page, titre liste des projet -->
+      <div class="grid grid-cols-10 gap-2 police">
+
+        <div class="col-start-1 col-span-3 row-span-2"> <img src="../image/ornement_cubic.png"> </div>
+        <div class="col-start-4 col-span-4 text-3xl pt-16 "> <hr> </div>
+        <div class="col-start-8 col-span-3 row-span-2"> <img src="../image/ornement_cubic_droite.png">  </div>
+        <div class="col-start-4 col-span-4 text-5xl  text-center " id="projets">  Liste des projets </div>
+      
+        <!-- Globe holographique-->
+        <div class="col-start-1 col-span-5 row-span-6  pt-8 projet1"><img class="shadow-2xl projet1" src="../image/horloge_holographique2.JPG" > </div>
+        <div class="col-start-7 row-start-3 col-span-4 text-4xl pt-8"> Globe Holographique</div>
+        <div class="col-start-7 row-start-4 col-span-4 text-2xl pt-16"> Description : </div>
+        <div class="col-start-7 row-start-5 col-span-3 text-2xl"> Réaliser sur le principe de fonctionnement de la persistance rétinienne grâce à sa rotation il permet de créer des image rémanentes</div>
+        <div class="col-start-7 row-start-6 col-span-3 text-2xl"> La conception hardware est basée sur une carte électronique blueprint Stm32 controllant un bandeaux de LEDs</div>
+        <div class="col-start-7 row-start-7 col-span-3 text-2xl"> </div>
+        <div class="col-start-7 row-start-8 col-span-4 text-3xl pt-16 pb-4"> <a class=" border-2 border-blue-400 pt-2 pr-4 pb-2 pl-4 hover:opacity-75 cursor-pointer "href="projet_holo.html">Consulter le projet</a></div>
+        <!-- beer pong -->
+        <div class="col-start-2 col-span-4 text-4xl pt-16"> Beer Pong leds</div>
+        <div class="col-start-6 col-span-5 row-span-6  pt-16 projet2"><video controls autoplay loop muted><source src="../video/annime_beerPong.mp4" type="video/mp4"></video> </div>
+        <div class="col-start-2 col-span-4 text-2xl pt-16"> Description : </div>
+        <div class="col-start-2 col-span-3 text-2xl"> Beer Pong leds, est un jeux de soirée qui a pour principe de jeu de devoir lancer une balle de Ping Pong dans des goblets</div>
+        <div class="col-start-2 col-span-3 text-2xl"> Modélisé puis découpé à l'aide d'une découp lazer et d'une imprimante 3d</div>
+        <div class="col-start-2 col-span-3 text-2xl"> La partie Hardware est composé d'un arduino, de capteur PIR ainsi que de bandeaux LEDs NeoPixel</div>
+        <div class="col-start-2 col-span-4 text-3xl pt-16 pb-4"> <a class=" border-2 border-blue-400 pt-2 pr-4 pb-2 pl-4 hover:opacity-75 cursor-pointer" href="projet_beerpong.html">Consulter le projet</a></div>
+        <!-- tank-->
+        <div class="col-start-1 col-span-5 row-span-6  pt-16 projet3"><img class="shadow-2xl" src="../image/tank2.jpg" > </div>
+        <div class="col-start-7 col-span-4 text-4xl pt-16"> Tank</div>
+        <div class="col-start-7 col-span-3 text-2xl pt-16"> Description : </div>
+        <div class="col-start-7 col-span-3 text-2xl"> Ce tank est un drone terrestre pouvant se déplacer et tirer des élastiques</div>
+        <div class="col-start-7 col-span-3 text-2xl"> La partie Hardware comporte un arduino mega, commandé grâce à une manette de PS3 celui-ci permet de controller deux moteurs et deux servo-moteru</div>
+        <div class="col-start-7 col-span-4 text-2xl"></div>
+        <div class="col-start-7 col-span-4 text-3xl pt-16 pb-4"> <a class=" border-2 border-blue-400 pt-2 pr-4 pb-2 pl-4 hover:opacity-75 cursor-pointer">Consulter le projet</a></div>
+
+        
+        <div class="col-start-4 col-span-4 text-3xl pt-16 "> <hr> </div>
+        <div class="col-start-4 col-span-4 pt-8 place-self-center"><img class="s" src="../image/logo.png" >  </div>
+        <div class="col-start-4 col-span-4 text-3xl pt-8 text-center " id="contact">Contacter <a class=" border-b-2 border-blue-400 ">Afproject</a></div>
+        
+
+        <div class="col-start-2 col-span-3  pt-16  place-self-center "><img class="s" src="../image/email.png" ></div>
+        <div class="col-start-7 col-span-3  pt-16  place-self-center "><img class="s" src="../image/linkedin.png" ></div>
+        <div class="col-start-2 col-span-3  pt-4  place-self-center text-3xl">Adresse mail</div>
+        <div class="col-start-7 col-span-3  pt-4  place-self-center text-3xl">Profil Linkedin</div>
+        <div class="col-start-2 col-span-3  pt-2  place-self-center text-2xl">Alexis.fredouillard@gmail.com</div>
+        <div class="col-start-7 col-span-3  pt-2  place-self-center text-2xl">Alexis fredouillard</div>
+
+        <div class="col-start-4 col-span-4 text-3xl pt-16 "> <hr> </div>
+
+
+     
+      </div>
+
+      <script src="../js/app.js"></script>
+
+      
+</body>
+</html>

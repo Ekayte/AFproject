@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>test</title>
+
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Khand:wght@300&display=swap" rel="stylesheet">
+
+    <!-- section slide  -->
+    <link rel="stylesheet" href="../scrollmagic2/assets/css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../scrollmagic2/assets/css/style.css" type="text/css">
+    
+  
+    <script type="text/javascript" src="../scrollmagic2/assets/js/lib/jquery.min.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/assets/js/lib/highlight.pack.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/assets/js/lib/modernizr.custom.min.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/assets/js/examples.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/assets/js/lib/velocity.min.js"></script>
+    
+    <script type="text/javascript" src="../scrollmagic2/assets/js/lib/gsap3/gsap.min.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/ScrollMagic.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+    <script type="text/javascript" src="../scrollmagic2/scrollmagic/uncompressed/plugins/animation.velocity.js"></script>
+    
+	
+
+  <!-- Import the component -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  
+  <!-- cdn navbar -->
+  <link rel="stylesheet" href="https://unpkg.com/flowbite@1.4.2/dist/flowbite.min.css" />
+  <script src="https://unpkg.com/flowbite@1.4.2/dist/flowbite.js"></script>
+
+
+      
+</head>
+<body>
+
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+  <!--                      block video d'intro + présentation des modèles 3d du projet                            -->
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+  
+<div class="bg-gray-900"> 
+    
+    
+    <div id="animate" >
+      <video controls autoplay loop muted>
+        <source src="../video/how-to-play-beer-pong.mp4" type="video/mp4">
+        </video>
+    </div>	
+    
+    <div class="absolute top-0 z-1 w-full">
+      <div class="flex ">
+        <div class="flex-none w-40 h-16">
+          <!-- This item will not grow -->
+        </div>
+
+        <nav class="flex-grow  mt-6 rounded-2xl  relative flex items-center justify-between px-2 py-3 mb-3 shadow-lg bg-white border-gray-200 px-2 sm:px-4 py-2.5 dark:bg-gray-800 ">
+              <div class="container flex flex-wrap justify-between items-center mx-auto">
+                <a href="index.html" class="flex items-center">
+                    
+                    <span class="uppercase self-center text-xl font-semibold whitespace-nowrap dark:text-white">Afproject</span>
+                </a>
+                <button data-collapse-toggle="mobile-menu" type="button" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                  <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                  <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-black bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 dark:text-blue-400" aria-current="page">Projets</a>
+                    </li>
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent dark:border-gray-700">Contact</a>
+                    </li>
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent dark:border-gray-700">Inscription</a>
+                    </li>
+                    <li>
+                      <a href="#" class="uppercase block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-gray-400 md:dark:hover:text-blue-400 dark:hover:bg-gray-700 dark:hover:text-blue-400 md:dark:hover:bg-transparent dark:border-gray-700">Connection</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            
+        <div class="flex-none w-40 h-16">
+          <!-- This item will not grow -->
+        </div>
+      </div>
+    
+          <div class="grid grid-cols-10 gap-2 police text-black disparition" >
+            <div class="col-start-4 col-span-8 text-6xl pt-32" >Projet BeerPong scintillant </div>
+            <div class="col-start-4 col-span-8 text-6xl"> et connecté</div>
+            <div class="col-start-4 col-span-8 text-3xl pt-8"> Sur la base du jeu du bière pong </div>
+            
+         
+          </div>
+    </div>
+
+  
+        <div class="text-5xl text-white text-center police pb-16"><a> Modèles 3d Beer Pong</a></div>
+
+    <div class=" relative w-full bg-gray-900 pb-8">
+        <model-viewer class=" relative model-viewer center bg-gray-300" src="https://cdn.glitch.global/20cbbb9e-8ead-4790-b58d-f77f5f86cb69/assemblage_beerPong.glb?v=1645477515597" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
+  
+            <button slot="ar-button" id="ar-button">
+              View in your space
+            </button>
+          
+            <div class="slider">
+              <div class="slides">
+                <button class="slide selected " onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69/assemblage_beerPong.glb?v=1645477515597')" style="background-image: url('../image/image_bp_bouton/assemblage.png');"></button>
+                
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Fangle.glb?v=1634045140579')" style="background-image: url('../image/image_bp_bouton/angle.png');"></button>
+                
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Farriere.glb?v=1634045142670')" style="background-image: url('../image/image_bp_bouton/arriere.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Farriere_cote.glb?v=1634045142123')" style="background-image: url('../image/image_bp_bouton/arriere_cote.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Farriere_fond.glb?v=1634045142642')" style="background-image: url('../image/image_bp_bouton/arriere_fond.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Fbase_droite.glb?v=1634045146385')" style="background-image: url('../image/image_bp_bouton/base_droite.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Fbase_gauche.glb?v=1634045146198')" style="background-image: url('../image/image_bp_bouton/base_gauche.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Fcote.glb?v=1634045140579')" style="background-image: url('../image/image_bp_bouton/cote.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Ftop_1.glb?v=1634045142424')" style="background-image: url('../image/image_bp_bouton/top_1.png');"></button>
+    
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Ftop_2.glb?v=1634045144592')" style="background-image: url('../image/image_bp_bouton/top_2.png');"></button>
+
+                <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69/capteur.glb?v=1645481239555')" style="background-image: url('../image/image_bp_bouton/capteur.png');"></button>
+                        
+             </div>
+            </div>
+          </model-viewer>
+          
+  
+                
+      </div>
+        
+        
+</div>
+
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+  <!--                                        block présentation du projet                                         -->
+  <!-- ----------------------------------------------------------------------------------------------------------- -->
+
+
+
+
+<div id="triggerMooveScroll" class="text-5xl text-center mt-6 police"> Présentation du projet Beer Pong </div>
+
+
+<div class="grid grid-cols-3 gap-2 police  ">
+  
+  <div class="col-start-1 col-span-2 text-center " >
+    <img  class="object-scale-down" id="mooveScroll" src="../image/image_projet_bp_vue_eclate/vue_eclate.PNG"> 
+      
+    </img>
+    
+  </div>
+
+
+  <div class="col-start-3 grid grid-flow-row auto-rows-max mr-6"> 
+
+    <div id="triggerPIR" class="triggerScrollPIR"></div>
+    <div id="animatePIR" class=" mooveScrollPIR rounded-lg border border-gray-900 py-6 px-2 mt-72 shadow-xl text-center" >
+      <span class="text-3xl "> Capteur de movement miniPIR </span>
+      <img class=""src="../image/image_projet_bp_vue_eclate/capteur_eclater.PNG">
+    </div>
+    <div id="triggerBOF" class="triggerScrollBOF triggerBOF2 "></div>
+    <div id="animateBOF" class="mooveScrollBOF animateBOF2 rounded-lg border border-gray-900 py-6 px-2 mt-6 opacity-0 shadow-xl text-center" > 
+      <span class="text-3xl">Bouton ON/OFF 12v</span>
+      <img class="inline-block align-middle ml-6"src="../image/image_projet_bp_vue_eclate/bouton_OnOFF.PNG">
+    </div>
+    <div id="triggerArduino" class="triggerScrollArduino triggerArduino2"></div>
+    <div id="animateArduino" class="mooveScrollArduino animateArduino2 rounded-lg border border-gray-900 py-6 px-2 mt-6 text-center opacity-0 shadow-xl " >
+      <sapn class="text-3xl"> Arduino mega </sapn>
+      <img class="align-middle"src="../image/image_projet_bp_vue_eclate/arduino.PNG">
+    </div>
+    <div id="triggerAlim" class="triggerScrollAlim triggerAlim2"></div>
+    <div id="animateAlim" class="mooveScrollAlim animateAlim2 rounded-lg border border-gray-900 py-6 px-2 mt-6 text-center opacity-0 shadow-xl " >
+      <span class="text-3xl">Régualteur abaisseur 5v alimenter par 3 AQ </span>
+      <img class="flex items-center justify-center"src="../image/image_projet_bp_vue_eclate/alimentation.PNG">
+    </div>
+    <div id="triggerNeo" class=""></div>
+    <div id="animateNeo" class="rounded-lg border border-gray-900 py-6 px-2 mt-6 text-center shadow-xl opacity-0" >
+      <span class="text-3xl"> Anneaux LEDs NeoPixel x10</span>
+      <img class="inline-block align-middle ml-6"src="../image/image_projet_bp_vue_eclate/neopixel.PNG">
+    </div>
+    
+  </div>
+  
+
+</div>
+
+ <div id="pinContainer" class="police">
+	<div id="slideContainer">
+    <!-- panel 1-->
+	<section class="panel bg-gray-900 text-white">
+		<div class="grid grid-cols-3">
+        <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Principe de fonctionnement & règle du jeu</span>
+        <div class="col-start-2 text-3xl mt-6 mb-10"> <hr> </div>
+    </div>
+    <div class="grid grid-cols-2  "> 
+      <div class="col-start-1 text-xl text-left text-justify self-center mx-16 ">
+          Le jeu du BeerPong est un jeu qui oppose deux équipes (peu importe le nombre de personnes dans ces équipes.), 
+          ces deux équipes ont chacune dix verres remplis de bière qui sont rassemblés en pyramide. Le but de chaque équipe est de lancer à tour 
+          de rôle une balle de Ping Pong afin d'espérer la faire tomber dans l’un des verres adverses, et ainsi faire boire ce verre à l’un des adversaires.
+          La partie se finit quand tous les verres de l’une des équipes sont bus et ainsi, les verres de l’équipe gagnante seront bu par l’équipe adverse.
+      </div>
+      <div class="ml-6"> 
+        <img class="rounded-2xl"src="../image/regle_beerPong.jfif"> 
+      </div>
+      
+    </div>
+	</section>
+  <!-- panel 2 -->
+	<section class="panel bg-white ">
+  <div class="grid grid-cols-3">
+      <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Principe du projet</span>
+      <div class="col-start-2 text-3xl mt-6 mb-4"> <hr> </div>
+  </div>
+    <div class="grid grid-cols-2">
+      <span class="col-start-1 text-xl text-left self-center ml-6">Le but est dans un premier temps de pouvoir mettre en place une détection de la chute de la balle dans le verre, pour cela
+        nous avons utilisé un capteur PIR mini.</span>
+      
+      <img class ="place-self-center"src="../image/capteur_PIR.jpeg"></img>
+
+      <div class="text-xl text-left ml-6 mt-16">Placer dans un support modélisé sur SolidWorks puis imprimé à l'aide d’une imprimante 3d PLA, les capteurs vont pouvoir être 
+        positionnés au-dessus de chaque verre et par conséquent, chaque chute de balle sera détectable. </div>
+        <div class="col-start-2 row-span-2">
+          <img class="shadow-2xl" src="../image/gif_beerPong.gif" >
+        </div> 
+      <div class=" text-xl text-left ml-6 mt-4">Dans un second temps nous retrouvons les bandeaux de leds placés dans des anneaux positionnés en dessous des verres. A début 
+        du jeu tous les anneaux sont de couleurs vertes ce qui signifie qu’aucune chute de balle n’à encore été détecté, lorsque qu’un capteur détecte une chute la 
+        couleur du bandeaux de leds passera au rouge ce qui à pour bût d'indiquer que le verre en question est éliminé.</div>
+        
+    </div>
+    
+	</section>
+  <!-- panel 3-->
+	<section class="panel bg-gray-900 text-white">
+    <div class="grid grid-cols-3">
+      <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Etat d'avancement de la V1 partie électronique</span>
+      <div class="col-start-2 text-3xl mt-6 mb-4"> <hr> </div>
+    </div>
+    <div class="grid grid-cols-2 mt-4">
+      <img class="rounded-2xl col-start-1 ml-4 "src="../image/schema_elec_bp.PNG"></img>
+      <span class="col-start-2 text-xl "> text d'explication du schéma électronique </span>
+    </div>
+    
+	</section>
+  <!-- panel 4 -->
+	 <section class="panel bg-white">
+    <div class="grid grid-cols-3">
+      <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Etat d'avancement de la V1 partie Software</span>
+      <div class="col-start-2 text-3xl mt-6 mb-4"> <hr> </div>
+    </div>
+    <img class="rounded-2xl ml-4 inline-block align-middle"src="../image/algo_bp.PNG"></img>
+	 </section>
+
+  </div>
+ </div>
+
+ <div class="grid grid-cols-10 gap-2 police">
+   <div class="col-start-4 col-span-4 text-3xl pt-16 "> <hr> </div>
+  <div class="col-start-4 col-span-4 pt-8 place-self-center"><img class="s" src="../image/logo.png" >  </div>
+  <div class="col-start-4 col-span-4 text-3xl pt-8 text-center " id="contact">Contacter <a class=" border-b-2 border-blue-400 ">Afproject</a></div>
+  
+
+  <div class="col-start-2 col-span-3  pt-16  place-self-center "><img class="s" src="../image/email.png" ></div>
+  <div class="col-start-7 col-span-3  pt-16  place-self-center "><img class="s" src="../image/linkedin.png" ></div>
+  <div class="col-start-2 col-span-3  pt-4  place-self-center text-3xl">Adresse mail</div>
+  <div class="col-start-7 col-span-3  pt-4  place-self-center text-3xl">Profil Linkedin</div>
+  <div class="col-start-2 col-span-3  pt-2  place-self-center text-2xl">Alexis.fredouillard@gmail.com</div>
+  <div class="col-start-7 col-span-3  pt-2  place-self-center text-2xl">Alexis fredouillard</div>
+
+  <div class="col-start-4 col-span-4 text-3xl pt-16 "> <hr> </div>
+ </div>
+ 
+
+
+  <script type="text/javascript" src="../js/app.js"></script>			
+	<script type="text/javascript" src="../../assets/js/tracking.js"></script>
+
+</body>
+</html>
