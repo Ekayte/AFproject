@@ -1,0 +1,19 @@
+{
+  "name": "web_mini_projet",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss build input.css -o output.css",
+    "watch": "postcss build input.css -o output.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.3.7",
+    "postcss": "^8.3.9",
+    "postcss-cli":"^9.0.1",
+    "tailwindcss": "^2.2.16"
+  }
+}

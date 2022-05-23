@@ -1,0 +1,204 @@
+
+/* annimation page index */
+
+.projet1 {
+    opacity: 0;
+    transition: all 0.4s linear;
+  }
+.projet2 {
+    opacity: 0;
+    transition: all 0.4s linear;
+  }
+.projet3 {
+    opacity: 0;
+    transition: all 0.4s linear;
+  }
+
+.fade-in {
+    opacity: 1;
+  }
+
+
+
+
+.police{
+    font-family: 'Khand', sans-serif;
+}
+
+/*annimation page beer pong */
+
+.beerPong_annimation{
+  width: 100%;
+  transition: all 0.4s linear;
+}
+.position-fixed{
+  position: fixed;
+}
+
+.scroll-in {
+  width: 90%;
+}
+
+.disparition {
+  transition: all 0.2s linear;
+}
+.fade-out {
+  opacity: 0;
+}
+
+.model-viewer{
+  width: 80%;
+  height: 750px;
+  margin: 0 auto;
+}
+
+
+.ligne{
+  padding: 50px;
+  width: 700px;
+}
+
+.position_1{
+  z-index: 1;
+  position: absolute;
+  top: 400px;
+  left: 100px;
+}
+.position_2{
+  z-index: 2;
+  position: absolute;
+  top: 75px;
+  left: 200px;
+}
+.position_3{
+  z-index: 3;
+  position: absolute;
+  top: 400px;
+}
+.position_4{
+  z-index: 4;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+.position_5{
+  z-index: 5;
+  position: absolute;
+  top: 625px;
+  left: 725px;
+}
+
+/*bouton visualisation des modele 3d*/
+
+/* This keeps child nodes hidden while the element loads */
+:not(:defined) > * {
+  display: none;
+}
+
+model-viewer {
+  background-color: #eee;
+  overflow-x: hidden;
+  --poster-color: #eee;
+}
+
+#ar-button {
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: 12px 50%;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  bottom: 132px;
+  padding: 0px 16px 0px 40px;
+  font-family: Roboto Regular, Helvetica Neue, sans-serif;
+  font-size: 14px;
+  color:#4285f4;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 18px;
+  border: 1px solid #DADCE0;
+}
+
+#ar-button:active {
+  background-color: #E8EAED;
+}
+
+#ar-button:focus {
+  outline: none;
+}
+
+#ar-button:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+
+.slider {
+  width: 100%;
+  text-align: center;
+  overflow: hidden;
+  position: absolute;
+  bottom: 16px;
+  left: 10%;
+  right: 10%;
+}
+
+.slides {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.slide {
+  scroll-snap-align: start;
+  flex-shrink: 0;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #fff;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: none;
+  display: flex;
+}
+
+.slide.selected {
+  border: 2px solid #4285f4;
+}
+
+.slide:focus {
+  outline: none;
+}
+
+.slide:focus-visible {
+  outline: 1px solid #4285f4;
+}
+
+
+
+#pinContainer {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	-webkit-perspective: 1000;
+	perspective: 1000;
+}
+
+#slideContainer {
+	width: 400%;
+	height: 100%;
+}
+
+.panel {
+	float: left;
+	width: 25%; 
+	height: 100%;
+	font-size: 60px;
+	text-align: center;
+}
+
