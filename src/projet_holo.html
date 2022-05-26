@@ -51,7 +51,7 @@
     
     
     <div id="animate" >
-      <video controls autoplay loop muted class="w-full">
+      <video autoplay loop muted class="w-full">
         <source src="../video/Hologrammes sur une Hélice Holographique HV EVENT 65 - Holovisio.mp4" type="video/mp4">
         </video>
     </div>	
@@ -110,7 +110,7 @@
         <div class="text-5xl text-white text-center police pb-16"><a> Modèles 3d Globe Holographique</a></div>
 
     <div class=" relative w-full bg-gray-900 pb-8">
-        <model-viewer class=" relative model-viewer center bg-gray-300" src="https://cdn.glitch.me/20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Fholo.glb?v=1634916857261" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
+        <model-viewer class=" relative model-viewer center bg-gray-300" src="https://cdn.glitch.me/20cbbb9e-8ead-4790-b58d-f77f5f86cb69/assemblage_globe_holo.glb?v=1653576769946" shadow-intensity="1" ar ar-modes="webxr scene-viewer quick-look" camera-controls alt="A 3D model carousel">
   
             <button slot="ar-button" id="ar-button">
               View in your space
@@ -118,7 +118,7 @@
           
             <div class="slider">
               <div class="slides">
-                <button class="slide selected " onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69%2Fholo.glb?v=1634916857261')" style="background-image: url('../image/image_holo_bouton/assemblage.png');"></button>
+                <button class="slide selected " onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69/assemblage_globe_holo.glb?v=1653576769946')" style="background-image: url('../image/image_holo_bouton/assemblage_holo.PNG');"></button>
                 
                 <button class="slide" onclick="switchSrc(this, '20cbbb9e-8ead-4790-b58d-f77f5f86cb69/platine_moteur.glb?v=1653415899163')" style="background-image: url('../image/image_holo_bouton/platine_moteur.PNG');"></button>
                 
@@ -173,10 +173,10 @@
 
 <div class="grid grid-cols-3 gap-2 police  ">
   
-  <div class="col-start-1 col-span-2 text-center " >
-    <img  class="object-scale-down" id="mooveScroll" src="../image/holo_eclate.png"> 
-      
-    </img>
+  <div class="col-start-1 col-span-2" >
+    
+    <img  class="object-scale-down " id="mooveScroll" src="../image/holo_eclate.png"> </img>
+    
     
   </div>
 
@@ -185,28 +185,28 @@
 
     <div id="triggerPIR" class="triggerScrollPIR"></div>
     <div id="animatePIR" class=" mooveScrollPIR rounded-lg border border-gray-900 py-6 px-2 mt-72 shadow-xl text-center" >
-      <span class="text-3xl "> Capteur de movement miniPIR </span>
-      <img class=""src="../image/image_projet_bp_vue_eclate/capteur_eclater.PNG">
+      <span class="text-3xl ">Régulateur moteur DC 12v</span>
+      <img class=""src="../image/image_vue_eclate_holo/DC_regulateur.png">
     </div>
     <div id="triggerBOF" class="triggerScrollBOF triggerBOF2 "></div>
     <div id="animateBOF" class="mooveScrollBOF animateBOF2 rounded-lg border border-gray-900 py-6 px-2 mt-6 opacity-0 shadow-xl text-center" > 
-      <span class="text-3xl">Bouton ON/OFF 12v</span>
-      <img class="inline-block align-middle ml-6"src="../image/image_projet_bp_vue_eclate/bouton_OnOFF.PNG">
+      <span class="text-3xl">Capteur à effet hall</span>
+      <img class="inline-block align-middle ml-6"src="../image/image_vue_eclate_holo/capteur_hall.png">
     </div>
     <div id="triggerArduino" class="triggerScrollArduino triggerArduino2"></div>
     <div id="animateArduino" class="mooveScrollArduino animateArduino2 rounded-lg border border-gray-900 py-6 px-2 mt-6 text-center opacity-0 shadow-xl " >
-      <sapn class="text-3xl"> Arduino mega </sapn>
-      <img class="align-middle"src="../image/image_projet_bp_vue_eclate/arduino.PNG">
+      <sapn class="text-3xl">Carte électronique </sapn>
+      <img class="inline-block align-middle"src="../image/image_vue_eclate_holo/carte_elec.png">
     </div>
     <div id="triggerAlim" class="triggerScrollAlim triggerAlim2"></div>
     <div id="animateAlim" class="mooveScrollAlim animateAlim2 rounded-lg border border-gray-900 py-6 px-2 mt-6 text-center opacity-0 shadow-xl " >
-      <span class="text-3xl">Régualteur abaisseur 5v alimenter par 3 AQ </span>
-      <img class="flex items-center justify-center"src="../image/image_projet_bp_vue_eclate/alimentation.PNG">
+      <span class="text-3xl">Bandeau de LEDs</span>
+      <img class="inline-block align-middle "src="../image/image_vue_eclate_holo/bandeau de leds.png">
     </div>
     <div id="triggerNeo" class=""></div>
     <div id="animateNeo" class="rounded-lg border border-gray-900 py-6 px-2 mt-6 text-center shadow-xl opacity-0" >
-      <span class="text-3xl"> Anneaux LEDs NeoPixel x10</span>
-      <img class="inline-block align-middle ml-6"src="../image/image_projet_bp_vue_eclate/neopixel.PNG">
+      <span class="text-3xl">Moteur DC 12v </span>
+      <img class="inline-block align-middle"src="../image/image_vue_eclate_holo/moteur_DC.png ">
     </div>
     
   </div>
@@ -219,18 +219,18 @@
     <!-- panel 1-->
 	<section class="panel bg-gray-900 text-white">
 		<div class="grid grid-cols-3">
-        <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Principe de fonctionnement & règle du jeu</span>
-        <div class="col-start-2 text-3xl mt-6 mb-10"> <hr> </div>
+        <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Principe de la percistance rétinienne</span>
+        <div class="col-start-2 text-3xl"> <hr> </div>
     </div>
-    <div class="grid grid-cols-2  "> 
+    <div class="grid grid-cols-2 h-full content-center "> 
       <div class="col-start-1 text-xl text-left text-justify self-center mx-16 ">
           Le jeu du BeerPong est un jeu qui oppose deux équipes (peu importe le nombre de personnes dans ces équipes.), 
           ces deux équipes ont chacune dix verres remplis de bière qui sont rassemblés en pyramide. Le but de chaque équipe est de lancer à tour 
           de rôle une balle de Ping Pong afin d'espérer la faire tomber dans l’un des verres adverses, et ainsi faire boire ce verre à l’un des adversaires.
           La partie se finit quand tous les verres de l’une des équipes sont bus et ainsi, les verres de l’équipe gagnante seront bu par l’équipe adverse.
       </div>
-      <div class="ml-6"> 
-        <img class="rounded-2xl"src="../image/regle_beerPong.jfif"> 
+      <div class="mx-6"> 
+        <img class="rounded-2xl"src="../image/principe_holo.png"> 
       </div>
       
     </div>
@@ -241,33 +241,28 @@
       <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Principe du projet</span>
       <div class="col-start-2 text-3xl mt-6 mb-4"> <hr> </div>
   </div>
-    <div class="grid grid-cols-2">
+    <div class="grid grid-cols-2 ">
       <span class="col-start-1 text-xl text-left self-center ml-6">Le but est dans un premier temps de pouvoir mettre en place une détection de la chute de la balle dans le verre, pour cela
         nous avons utilisé un capteur PIR mini.</span>
-      
-      <img class ="place-self-center"src="../image/capteur_PIR.jpeg"></img>
-
-      <div class="text-xl text-left ml-6 mt-16">Placer dans un support modélisé sur SolidWorks puis imprimé à l'aide d’une imprimante 3d PLA, les capteurs vont pouvoir être 
-        positionnés au-dessus de chaque verre et par conséquent, chaque chute de balle sera détectable. </div>
-        <div class="col-start-2 row-span-2">
-          <img class="" src="../image/gif_beerPong.gif" >
-        </div> 
-      <div class=" text-xl text-left ml-6 mt-4">Dans un second temps nous retrouvons les bandeaux de leds placés dans des anneaux positionnés en dessous des verres. A début 
-        du jeu tous les anneaux sont de couleurs vertes ce qui signifie qu’aucune chute de balle n’à encore été détecté, lorsque qu’un capteur détecte une chute la 
-        couleur du bandeaux de leds passera au rouge ce qui à pour bût d'indiquer que le verre en question est éliminé.</div>
-        
-    </div>
-    
+        <div class="my-6"> 
+          <img class =""src="../image/holo_annime.gif"></img>
+        </div>
+    </div>     
 	</section>
   <!-- panel 3-->
 	<section class="panel bg-gray-900 text-white">
     <div class="grid grid-cols-3">
-      <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Etat d'avancement de la V1 partie électronique</span>
+      <span class="col-start-1 col-span-3 text-5xl text-center mt-6">Etat d'avancement partie électronique</span>
       <div class="col-start-2 text-3xl mt-6 mb-4"> <hr> </div>
     </div>
-    <div class="grid grid-cols-2 mt-4">
-      <img class="rounded-2xl col-start-1 ml-4 "src="../image/schema_elec_bp.PNG"></img>
-      <span class="col-start-2 text-xl "> text d'explication du schéma électronique </span>
+    <div class="grid grid-cols-3 justify-items-stretch mt-2">
+      <img class="col-start-1 col-span-2 rounded-2xl  ml-4 "src="../image/schema_elec_holo.png"></img>
+      
+      <span class="col-start-3 text-xl "> text d'explication du schéma électronique </span>
+
+      <img class="row-start-2 col-span-2 col-start-1 justify-self-center rounded-2xl ml-4 mt-2 "src="../image/PCB_holo.png"></img>
+
+      <span class="row-start-2 col-start-3 text-xl "> text d'explication du PCB </span>
     </div>
     
 	</section>
